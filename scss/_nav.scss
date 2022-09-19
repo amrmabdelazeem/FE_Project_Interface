@@ -1,0 +1,50 @@
+.nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8em;
+  color: #fff;
+  z-index: 5555;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 9em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $text;
+    width: 80%;
+    height: 2px;
+  }
+
+  .container {
+    padding-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-list {
+    display: flex;
+    list-style: none;
+
+    &-item {
+      padding: 1em 2em;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.5s;
+      font-size: 1.1rem;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  span {
+    color: $primary;
+    font-size: 1.5rem;
+
+  }
+}

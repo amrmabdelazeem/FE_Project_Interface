@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: $text;
+  background-color: #fff;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  display: block;
+  margin-bottom: 1em;
+}
+
+/// typography
+.heading-1 {
+  color: #fff;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-weight: normal;
+  margin-bottom: 2em;
+}
+
+.heading-3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.heading-4 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+
+//// buttons
+.btn-primary {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid $primary;
+  padding: 1em 2em;
+  border-radius: 20px;
+  transition: all 0.5s;
+
+  &:hover {
+    box-shadow: 0px 5px 10px rgba(#000, 0.8);
+    background-color: $primary;
+  }
+}
